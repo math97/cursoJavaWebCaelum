@@ -10,9 +10,10 @@
 </head>
 <body>
 <c:import url="cabecalho.jsp"/>
-	<jsp:useBean id="dao" class="br.com.caelum.agenda.dao.ContatoDao"/>
+	<%--Não é mais ncesessário 
+	<jsp:useBean id="dao" class="br.com.caelum.agenda.dao.ContatoDao"/> --%>
 	<table>
-		<c:forEach var="contato" items="${dao.lista}">
+		<c:forEach var="contato" items="${contatos}">
 			<tr>
 				<td>${contato.nome}</td>
 				<td>
